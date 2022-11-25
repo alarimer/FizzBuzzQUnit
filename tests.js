@@ -20,4 +20,15 @@ QUnit.module('FizzBuzz', function () {
         // assert
         assert.equal(actual, expected, 'number: ' + data);
     });
+
+    QUnit.test.each("WhatToSay_DivisibleByFive_ReturnsBuzz", [5,10], function (assert, data) {
+        // arrange
+        let expected = 'Buzz';
+
+        // act
+        let actual = whatToSay(data);
+
+        // assert
+        assert.equal(actual, expected, 'number: ' + data);
+    });
 });
