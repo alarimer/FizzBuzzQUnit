@@ -31,4 +31,15 @@ QUnit.module('FizzBuzz', function () {
         // assert
         assert.equal(actual, expected, 'number: ' + data);
     });
+
+    QUnit.test.each("WhatToSay_DivisibleByBothThreeAndFive_ReturnsFizzBuzz", [15,30], function (assert, data) {
+        // arrange
+        let expected = 'FizzBuzz';
+
+        // act
+        let actual = whatToSay(data);
+
+        // assert
+        assert.equal(actual, expected, 'number: ' + data);
+    });
 });
