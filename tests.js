@@ -9,4 +9,15 @@ QUnit.module('FizzBuzz', function () {
         // assert
         assert.equal(actual, expected);
     });
+
+    QUnit.test("WhatToSay_DivisibleByThree_ReturnsFizz", function (assert) {
+        // arrange
+        let expected = 'Fizz';
+
+        // act
+        let actual = whatToSay(3);
+
+        // assert
+        assert.equal(actual, expected);
+    });
 });
