@@ -1,14 +1,16 @@
 function whatToSay(number) {
-    if (number % 3 ===0 && number % 5 === 0) {
-        return 'FizzBuzz';
-    }
+    let sayThis;
 
     if (number % 3 === 0) {
-        return 'Fizz';
+        sayThis = 'Fizz';
     }
 
     if (number % 5 === 0) {
-        return 'Buzz';
+        sayThis = sayThis ? sayThis += 'Buzz' : 'Buzz';
+    }
+
+    if (sayThis) {
+        return sayThis;
     }
 
     return number;
