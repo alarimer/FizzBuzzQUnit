@@ -6,7 +6,7 @@ function whatToSay(number) {
     }
 
     if (number % 5 === 0) {
-        sayThis = sayThis ? sayThis += 'Buzz' : 'Buzz';
+        sayThis = (sayThis ?? '') + 'Buzz';
     }
 
     if (sayThis) {
