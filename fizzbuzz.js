@@ -9,9 +9,5 @@ function whatToSay(number) {
         sayThis = (sayThis ?? '') + 'Buzz';
     }
 
-    if (sayThis) {
-        return sayThis;
-    }
-
-    return number;
+    return sayThis ?? number;
 }
